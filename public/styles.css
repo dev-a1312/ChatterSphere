@@ -1,0 +1,61 @@
+/* Body background */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Chat messages */
+.chat-message {
+    padding: 10px 15px;
+    border-radius: 8px;
+    max-width: 70%;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.user-message {
+    background-color: #3b82f6;
+    color: white;
+    align-self: flex-end;
+    transform: scale(1);
+}
+
+.ai-message {
+    background-color: #f3f4f6;
+    color: #333;
+    align-self: flex-start;
+    transform: scale(1);
+}
+
+/* Hover effect for messages */
+.chat-message:hover {
+    transform: scale(1.05) translateY(-5px);
+}
+
+/* Add a little shadow and 3D animation for input box */
+#user-input {
+    transition: box-shadow 0.3s ease;
+}
+
+#user-input:focus {
+    box-shadow: 0 0 10px rgba(56, 161, 255, 0.6);
+}
+
+/* Chat container 3D effect */
+#chat-container {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    perspective: 1500px;
+    transform-style: preserve-3d;
+}
+
+#chat-box {
+    transform: rotateX(15deg);
+}
+
+/* Hover effect for the title */
+h1 {
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+h1:hover {
+    color: #fbbf24;
+    transform: scale(1.1) rotate(12deg);
+}
